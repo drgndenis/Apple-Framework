@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     // There are 3 different data information in each column
     let columns: [GridItem] = [
         GridItem(.flexible()),
@@ -23,10 +25,17 @@ struct FrameworkGridView: View {
                     // Get data in Framework.swift
                     ForEach(MockData.frameworks) { framework in
                         FrameworksView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
             }
             .navigationTitle("🍎 Frameworks")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView
+                )
+            }
         }
     }
 }
