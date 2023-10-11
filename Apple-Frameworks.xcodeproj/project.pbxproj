@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22ACA8A2AD6A2AA00E91569 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22ACA892AD6A2AA00E91569 /* FrameworkDetailView.swift */; };
+		E2CA1E1D2AD43B700051728E /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1E1C2AD43B700051728E /* Framework.swift */; };
 		E2DAC0E12AD4346700FF48AE /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAC0E02AD4346700FF48AE /* Apple_FrameworksApp.swift */; };
-		E2DAC0E32AD4346700FF48AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAC0E22AD4346700FF48AE /* ContentView.swift */; };
+		E2DAC0E32AD4346700FF48AE /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAC0E22AD4346700FF48AE /* FrameworkGridView.swift */; };
 		E2DAC0E52AD4346800FF48AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DAC0E42AD4346800FF48AE /* Assets.xcassets */; };
 		E2DAC0E82AD4346800FF48AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DAC0E72AD4346800FF48AE /* Preview Assets.xcassets */; };
+		E2F2B48B2AD6AC07002CCD75 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22ACA892AD6A2AA00E91569 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		E2CA1E1C2AD43B700051728E /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		E2DAC0DD2AD4346700FF48AE /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DAC0E02AD4346700FF48AE /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
-		E2DAC0E22AD4346700FF48AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2DAC0E22AD4346700FF48AE /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		E2DAC0E42AD4346800FF48AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2DAC0E72AD4346800FF48AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				E2DAC0E02AD4346700FF48AE /* Apple_FrameworksApp.swift */,
-				E2DAC0E22AD4346700FF48AE /* ContentView.swift */,
+				E2DAC0E22AD4346700FF48AE /* FrameworkGridView.swift */,
+				E22ACA892AD6A2AA00E91569 /* FrameworkDetailView.swift */,
+				E2CA1E1C2AD43B700051728E /* Framework.swift */,
 				E2DAC0E42AD4346800FF48AE /* Assets.xcassets */,
 				E2DAC0E62AD4346800FF48AE /* Preview Content */,
+				E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2DAC0E32AD4346700FF48AE /* ContentView.swift in Sources */,
+				E22ACA8A2AD6A2AA00E91569 /* FrameworkDetailView.swift in Sources */,
+				E2DAC0E32AD4346700FF48AE /* FrameworkGridView.swift in Sources */,
+				E2CA1E1D2AD43B700051728E /* Framework.swift in Sources */,
+				E2F2B48B2AD6AC07002CCD75 /* AFButton.swift in Sources */,
 				E2DAC0E12AD4346700FF48AE /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
