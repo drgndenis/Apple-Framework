@@ -10,13 +10,16 @@ import SwiftUI
 struct FrameworkDetailView: View {
     
     var framework: Framework
+    
     @Binding var isShowingDetailView : Bool
+    @Environment(\.openURL) var openURL
     
     var body: some View {
         VStack() {
             HStack {
                 Spacer()
                 
+                // Close button
                 Button {
                     isShowingDetailView = false
                 } label: {
@@ -30,6 +33,7 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
+            // Framework Detail
             FrameworksView(framework: framework)
             Text(framework.description)
                 .font(.body)
@@ -37,12 +41,13 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
+            // Learn More Button
             Button() {
-                
+                // Action to be taken when "Learn More" button is clicked
+                openURL((URL(string: framework.urlString) ?? URL(string: "https://www.apple.com"))!)
             } label: {
                 AFButton(title: "Learn More")
             }
-
         }
     }
 }

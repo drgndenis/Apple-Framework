@@ -18,27 +18,21 @@ struct FrameworkGridView: View {
         GridItem(.flexible()),
     ]
     
-        var body: some View {
-            NavigationStack {
-                ScrollView {
-                    LazyVGrid(columns: columns) {
-                        // Fetch data from Framework.swift and loop through frameworks.
-                        ForEach(MockData.frameworks) { framework in
-                            // Display each framework using the FrameworksView.
-                            FrameworksView(framework: framework)
-                                .onTapGesture {
-                                    // Set the selectedFramework property in the view model when a framework is tapped.
-                                    viewModel.selectedFramework = framework
-                                }
-                        }
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    // Get data in Framework.swift
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworksView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
+            }
             .navigationTitle("🍎 Frameworks")
             .sheet(isPresented: $viewModel.isShowingDetailView) {
-                /*
-                 If viewModel.isShowingDetailView is true, the FrameworkDetailView screen is presented.
-                 If viewModel.isShowingDetailView is false, this page is dismissed.
-                 */
                 FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView
                 )
             }
