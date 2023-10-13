@@ -11,30 +11,13 @@ struct FrameworkDetailView: View {
     
     var framework: Framework
     
-    @Binding var isShowingDetailView : Bool
     @Environment(\.openURL) var openURL
     
     var body: some View {
         VStack() {
-            HStack {
-                Spacer()
-                
-                // Close button
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundStyle(Color(uiColor: .label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
-                .padding()
-            }
-            
-            Spacer()
             
             // Framework Detail
-            FrameworksView(framework: framework)
+            FrameworkTitleView(framework: framework)
             Text(framework.description)
                 .font(.body)
                 .padding()
@@ -53,5 +36,6 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
+    FrameworkDetailView(framework: MockData.sampleFramework)
 }
+

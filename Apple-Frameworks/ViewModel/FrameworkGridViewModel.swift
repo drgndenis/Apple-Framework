@@ -9,11 +9,10 @@ import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
     
-    var selectedFramework: Framework? {
-        didSet {
-            isShowingDetailView = true
-        }
-    }
-    
-    @Published var isShowingDetailView = false
+    // There are 3 different data information in each column
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
 }

@@ -14,6 +14,7 @@
 		E2DAC0E32AD4346700FF48AE /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAC0E22AD4346700FF48AE /* FrameworkGridView.swift */; };
 		E2DAC0E52AD4346800FF48AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DAC0E42AD4346800FF48AE /* Assets.xcassets */; };
 		E2DAC0E82AD4346800FF48AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DAC0E72AD4346800FF48AE /* Preview Assets.xcassets */; };
+		E2EAB1EF2AD8374400EBF99A /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAB1EE2AD8374400EBF99A /* FrameworkTitleView.swift */; };
 		E2F2B48B2AD6AC07002CCD75 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		E2DAC0E22AD4346700FF48AE /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		E2DAC0E42AD4346800FF48AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2DAC0E72AD4346800FF48AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2EAB1EE2AD8374400EBF99A /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,12 +75,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		E29B77B52AD73F80006270BA /* Extensions */ = {
+		E29B77B52AD73F80006270BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E2EAB1EE2AD8374400EBF99A /* FrameworkTitleView.swift */,
 				E2F2B48A2AD6AC07002CCD75 /* AFButton.swift */,
 			);
-			path = Extensions;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E2DAC0D42AD4346700FF48AE = {
@@ -104,7 +107,7 @@
 				E29B77B12AD73EA2006270BA /* Models */,
 				E29B77B22AD73EA9006270BA /* Views */,
 				E29B77B32AD73EAE006270BA /* ViewModel */,
-				E29B77B52AD73F80006270BA /* Extensions */,
+				E29B77B52AD73F80006270BA /* Components */,
 				E2DAC0E42AD4346800FF48AE /* Assets.xcassets */,
 				E2DAC0E62AD4346800FF48AE /* Preview Content */,
 			);
@@ -191,6 +194,7 @@
 			files = (
 				E22ACA8A2AD6A2AA00E91569 /* FrameworkDetailView.swift in Sources */,
 				E2DAC0E32AD4346700FF48AE /* FrameworkGridView.swift in Sources */,
+				E2EAB1EF2AD8374400EBF99A /* FrameworkTitleView.swift in Sources */,
 				E2CA1E1D2AD43B700051728E /* Framework.swift in Sources */,
 				E2F2B48B2AD6AC07002CCD75 /* AFButton.swift in Sources */,
 				E2DAC0E12AD4346700FF48AE /* Apple_FrameworksApp.swift in Sources */,
